@@ -14,7 +14,7 @@
     <header id="header">
         <nav class="navbar">
             <div class="logo">
-                <a href="{{ url_for('index') }}">{{ data.name.split()[0] }}.dev</a>
+                <img src="{{ url_for('static', filename='images/logo_img.png')}}" alt="Santosh.dev" id="logo_img">
             </div>
             <div class="nav-links" id="navLinks">
                 <a href="{{ url_for('index') }}" class="nav-item {% if request.path == url_for('index') %}active{% endif %}">Home</a>
