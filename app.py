@@ -54,7 +54,7 @@ portfolio_data = {
         {
             'position': 'Tech Intern',
             'company': 'Wissen Technology',
-            'year': 'Agu, 2024 -  Present',
+            'year': 'Aug, 2024 -  Present',
             'description': 'Onsite Working at Client Location Morgan Stanley, Working as Full Stack Developer with Angular and Python Technologies.'
         }
     ],
@@ -70,11 +70,19 @@ portfolio_data = {
         },
         {
             'name': 'Weather App',
-            'category': 'app',
+            'category': 'web',
             'description': 'A responsive web app, provides real-time weather updates based on location. Along with weather forecast for next 5 days and some additional details.',
             'technologies': ['JavaScript', 'OpenWeather API', 'HTML', 'CSS'],
             'link': 'https://github.com/Santosh-2003-sahoo/App2-Weather-app',
             'demo_link': 'https://santosh-2003-sahoo.github.io/App2-Weather-app/'
+        },
+        {
+            'name': "What'sApp Chat Analyzer",
+            'category': 'web',
+            'description': 'A web app that analyzes your WhatsApp chat data and provides insights like most used words, most active users, and more.',
+            'technologies': ['Streamlit', 'Python', 'Pandas', 'Matplotlib'],
+            'link': 'https://github.com/Santosh-2003-sahoo/Whatsapp_chat_analyzer',
+            'demo_link': 'https://whatsapp-chat-analyzer-2hg8.onrender.com/'
         }
         
     ]
