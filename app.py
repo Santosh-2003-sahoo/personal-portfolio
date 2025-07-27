@@ -60,7 +60,7 @@ portfolio_data = {
         {
             'position': 'Tech Intern',
             'company': 'Wissen Technology',
-            'year': 'Aug, 2024 -  Present',
+            'year': 'Aug, 2024 -  Jun, 2025',
             'description': 'Onsite Working at Client Location Morgan Stanley, Working as Full Stack Developer with Angular and Python Technologies.'
         }
     ],
