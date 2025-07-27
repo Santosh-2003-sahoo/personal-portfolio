@@ -41,7 +41,7 @@ portfolio_data = {
             'degree': 'Bachelor of Technology in Computer Science',
             'institution': 'Chitkara University, Punjab',
             'year': '2021 - 2025',
-            'description': 'Graduated with honors. Specialized in Algorithms and Development.'
+            'description': 'Graduated with honors. Maintaining CGPA of stright 9.67. Specialized in Algorithms and Development.'
         },
         {
             'degree': 'Higher Secondary Education',
@@ -51,6 +51,12 @@ portfolio_data = {
         }
     ],
     'experience': [
+        {
+            'position': 'Tech Analyst',
+            'company': 'Wissen Technology',
+            'year': 'Jun, 2025 - Present',
+            'description': 'Working on Financial Domain Project, developing and maintaining web applications using Angular and Python. Collaborating with cross-functional teams to deliver high-quality software solutions.'
+        },
         {
             'position': 'Tech Intern',
             'company': 'Wissen Technology',
