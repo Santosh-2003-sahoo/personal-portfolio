@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Personal Project</h1>
+        </header>
+        <main>
+            <p>This project is a personal endeavor and is not publicly available for download.</p>
+            <p>If you are interested in learning more or would like to request the APK, please feel free to contact me.</p>
+            <a href="{{ url_for('contact') }}" class="btn-primary">Contact Me</a>
+        </main>
+        <footer>
+            <p>&copy; {{ data['current_year'] }} {{ data['name'] }}</p>
+        </footer>
+    </div>
+</body>
+</html>

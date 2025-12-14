@@ -89,6 +89,14 @@ portfolio_data = {
             'technologies': ['Streamlit', 'Python', 'Pandas', 'Matplotlib'],
             'link': 'https://github.com/Santosh-2003-sahoo/Whatsapp_chat_analyzer',
             'demo_link': 'https://whatsapp-chat-analyzer-2hg8.onrender.com/'
+        },
+        {
+            'name': 'Finance Tracker',
+            'category': 'app',
+            'description': 'A mobile app to track your expenses and income, tracking each spending from multiple sources and manage bills.',
+            'technologies': ['Python', 'MongoDB', 'Flask', 'React Native'],
+            'link': 'https://github.com/Santosh-2003-sahoo/budget-app-ui',
+            'demo_link': ''
         }
         
     ]
@@ -178,6 +186,10 @@ def contact():
             return redirect(url_for('contact'))
         
     return render_template('contact.html', data=portfolio_data)
+
+@app.route('/personal-project')
+def personal_project():
+    return render_template('personal_project.html', data=portfolio_data)
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
