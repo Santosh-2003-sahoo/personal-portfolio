@@ -3,22 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Project</title>
+    <title>Not Available - Personal Project</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            padding: 2rem;
+        }
+
+        .error-wrapper {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #808080 0%, #505050 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+
+        .error-title {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .error-description {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .error-message {
+            background-color: #f9f9f9;
+            border-left: 4px solid #808080;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: left;
+            border-radius: 8px;
+        }
+
+        .error-message p {
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+
+        .error-message p:last-child {
+            margin-bottom: 0;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.85rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #505050 0%, #333333 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(80, 80, 80, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: #ffffff;
+            color: #505050;
+            border: 2px solid #505050;
+        }
+
+        .btn-secondary:hover {
+            background-color: #505050;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .footer-text {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        @media (max-width: 600px) {
+            .error-wrapper {
+                padding: 2rem 1.5rem;
+            }
+
+            .error-code {
+                font-size: 5rem;
+            }
+
+            .error-title {
+                font-size: 2rem;
+            }
+
+            .error-description {
+                font-size: 1rem;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Personal Project</h1>
-        </header>
-        <main>
-            <p>This project is a personal endeavor and is not publicly available for download.</p>
-            <p>If you are interested in learning more or would like to request the APK, please feel free to contact me.</p>
-            <a href="{{ url_for('contact') }}" class="btn-primary">Contact Me</a>
-        </main>
-        <footer>
-            <p>&copy; {{ data['current_year'] }} {{ data['name'] }}</p>
-        </footer>
+    <div class="error-wrapper">
+        <div class="error-code">⚠️</div>
+        <h1 class="error-title">Access Restricted</h1>
+        <p class="error-description">This project is a personal endeavor and is not publicly available for download.</p>
+        
+        <div class="error-message">
+            <p><strong>What's happening?</strong></p>
+            <p>The APK or demo for this project is not available for public access at this time. However, I'd love to hear from you if you're interested in learning more about it!</p>
+        </div>
+
+        <div class="action-buttons">
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">Contact Me for Details</a>
+            <a href="{{ url_for('projects') }}" class="btn btn-secondary">View Other Projects</a>
+        </div>
+
+        <p class="footer-text">&copy; {{ data['current_year'] }} {{ data['name'] }}</p>
     </div>
 </body>
 </html>
